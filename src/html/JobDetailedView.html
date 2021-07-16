@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>E-commerproject</title>
+    <link rel="stylesheet" type="text/css"  href="../css/main1.css"/>
+    <link rel="stylesheet" type="text/css"  href="../css/nav.css"/>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    </head>
+<body>
+    <div id="nav-placeholder"></div>
+	<script>
+      $(function () {
+        $("#nav-placeholder").load("nav.html");
+      });
+    </script>
+    <div class="container">
+        <div class="cloumn">
+            <div class="row">
+              <h4>Company Name</h4><p id="companyname">Publicis Sapient</p>
+            </div>
+            <div class="row" >
+              <h4>Job Profile</h4><p id="jobprofile">Associate Software Development Engineer 1</p>
+            </div>
+            <div class="row">
+              <h4>Posted On</h4><p id="postedon">15 july, 2021</p>
+            </div>
+            <div class="row">
+                <h4>Skills Required</h4><p id="skills">DSA, Java, SpringBoot, Javascript</p>
+              </div>
+          </div>
+    </div>
+    <button type="button" class="btn btn-primary">Apply for the job</button>
+    <div class="footer">
+        <p>2021 Technical Profile Tracker</p>
+    </div>
+    <script src="../js/AdminView.js" ></script>
+</body>
+</html>
