@@ -1,8 +1,6 @@
-let JobId=1;
-
 function sendRequest() {
-    let url = "http://localhost:8051/job/userid/"
-    url+=JobId;
+    let url = "http://localhost:8051/alljobs"
+    
     axios.get(url)
     .then(
         (response) => {
@@ -12,10 +10,10 @@ function sendRequest() {
         })
         .catch((error) => {
             console.log(error)
-        })   
+        })
 }
 
-function FetchingJobDetailsFromMicroService(){
+function f5(){
     for (const i of data) {
         if(i.id===1)
         {   setData(companyname,i.companyName);
@@ -29,8 +27,4 @@ function FetchingJobDetailsFromMicroService(){
 
 function setData(id_name,val){
     document.getElementById(id_name).value=val;
-}
-
-fucntion getData(id_name)
-{   return document.getElementById(id_name).value;
 }

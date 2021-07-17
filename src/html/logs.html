@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Jobs listing page </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
+    <script src="../../node_modules/axios/dist/axios.min.js"></script>
+    <script src="https://use.typekit.net/sqr4veo.js"></script>
+    <link rel="stylesheet" type="text/css"  href="../css/main1.css"/>
+    <link rel="stylesheet" type="text/css"  href="../css/nav.css"/>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script>try { Typekit.load({ async: true }); } catch (e) { }</script>
+   
+   
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/table.css">
+</head>
+
+<body>
+
+    <div class="border">
+        <div class="wrapper">
+            <header class="main-header clearfix">
+
+
+                <div class="logo">
+                    <!-- <image src="https://picsum.photos/75/75">
+
+                    </image> -->
+                    <h1>Jobs<span>Tracker</span></h1>
+                </div>
+                <nav class="nav">
+                    <a href="#" class="current">All Jobs</a>
+                    <a href="#">Latest Jobs</a>
+                    <a href="#">Jobs by Profile</a>
+                    <a href="#">Jobs by location</a>
+                </nav>
+        </div>
+
+        </header>
+
+        <div class="container" id="show-data">
+            <table class="ctable">
+                <thead>
+                    <tr>
+                        <th>LOG-ID</th>
+                        <th>Date of Applying</th>
+                        <th>Job Status</th>
+                        <th>Job</th>
+                        <th>User</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- <tr>
+                        <td>1</td>
+                        <td>2021-01-02</td>
+                        <td>Pending</td>
+                        <td>1</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>2021-01-03</td>
+                        <td>Selected</td>
+                        <td>1</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>2021-01-03</td>
+                        <td>Rejected</td>
+                        <td>2</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>2021-01-03</td>
+                        <td>Rejected</td>
+                        <td>2</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>2021-01-03</td>
+                        <td>Pending</td>
+                        <td>2</td>
+                        <td>1</td>
+                    </tr> -->
+                </tbody>
+            </table>
+        </div>
+
+        <div class="container">
+
+
+            <div class="inner-container">
+                <div class="button-container">
+                    <input type="button" class="input-submit" value="See All Logs" onclick="fetchData()">
+                </div>
+            </div>
+            <!-- <div class="container" id="show-data">
+
+            </div> -->
+
+        </div>
+        <!-- <ul id= "timeline">
+        <a href="#">
+            <li class= "listing clearfix">
+                <div class= "image_wrapper">
+                <img src= "images/twitter.jpg" alt= "Twitter">
+            </div>
+            <div class= "info">
+                <span class= "job_title">UX Designer</span>
+           <span class= "job_info">Twitter<span>&bull;</span>
+           Bengaluru<span>&bull;</span> June 30th 2021 </span>
+            </div>
+           
+            </li>
+        </a>
+    </ul>
+
+    <ul id= "timeline">
+        <a href="#">
+            <li class= "listing clearfix">
+                <div class= "image_wrapper">
+                <img src= "images/apple.jpg" alt= "Apple">
+            </div>
+            <div class= "info">
+                <span class= "job_title">Product Manager</span>
+           <span class= "job_info">Apple<span>&bull;</span>
+            Hyderabad<span>&bull;</span> August 1st 2021 </span>
+            </div>
+           
+            </li>
+        </a>
+
+    </ul>
+
+
+    <ul id= "timeline">
+        <a href="#">
+            <li class= "listing clearfix">
+                <div class= "image_wrapper">
+                <img src= "images/swiggy.jpg" alt= "Swiggy">
+            </div>
+            <div class= "info">
+                <span class= "job_title">Software Developer</span>
+           <span class= "job_info">Swiggy<span>&bull;</span>
+            Gurgaon<span>&bull;</span> June 22nd 2021 </span>
+            </div>
+           
+            </li>
+        </a>
+    </ul>
+    <li class= "load_more">
+        <Button class= "button">Load More</Button></li> -->
+        <!-- "<input type='text' value="+i.jobStatus+">" -->
+
+
+    </div>
+    <div class="footer">
+        <p>2021 Technical Profile Tracker</p>
+    </div>
+    <script src="../js/fetch_axios.js"></script>
+</body>
+
+</html>

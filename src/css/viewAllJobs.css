@@ -4,8 +4,7 @@ body {
 }
 
 .border {
-  height: 6px;
-  border: 0;
+  height: 22px;
   background-color: #fd7473;
   background-image: -webkit-gradient(
     linear,
@@ -84,7 +83,7 @@ body {
 .nav a {
   color: #9592ad;
 
-  margin-left: 1mm;
+  margin-left: 2em;
   text-decoration: none;
 }
 
