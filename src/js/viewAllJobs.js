@@ -16,10 +16,10 @@ function sendRequest() {
 function f5(){
     for (const i of data) {
         if(i.id===1)
-        {   setData(companyname,i.companyName);
-            setData(jobprofile,i.jobRole);
+        {   setData(job_title,i.jobRole);
+            setData(job_info,i.companyName);
             setData(postedon,i.postedOn);
-         //   setData(companyname,i.companyName);
+         
             return ;
         }
     }
