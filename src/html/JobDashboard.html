@@ -19,6 +19,7 @@
   </head>
 
   <body>
+    <div class="container">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">Jobs Tracker</a>
@@ -44,9 +45,79 @@
       </div>
     </nav>
     <div class="d-grid gap-2">
-      <button class="btn btn-primary" type="button">New Job</button>
+      <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#new-job-card" aria-expanded="true">New Job</button>
     </div>
-    <div class="container card-holder">
+    <div class="card-holder" id="new-job-card">
+      <div class="card text-center">
+        <div class="card-header">
+          <h3>Enter new job details</h3>
+        </div>
+        <div class="card-body">
+          <form action="#" onsubmit="helper(event)">
+            <div class="mb-3">
+              <label for="JobId" class="form-label"
+                >Job Id</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="JobId"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="JobRole" class="form-label"
+                >Job Role</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="JobRole"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="PostedOn" class="form-label"
+                >Job Posted On</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="PostedOn"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="CompanyName" class="form-label"
+                >Company Name</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="CompanyName"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="CompanyUrl" class="form-label"
+                >Company Url</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="CompanyUrl"
+                required
+              />
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+
+        </div>
+      </div>
+    </div>
+
+    </div>
+    <div class="card-holder" id="job-card">
       <div class="card text-center">
         <div class="card-header">
           <div
@@ -75,6 +146,9 @@
         </div>
       </div>
     </div>
+    <div class="container" id="dynamicholder">
+
+      </div>>
     <div class="footer">
       <p>2021 Technical Profile Tracker</p>
     </div>
@@ -83,5 +157,6 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+  </div>
   </body>
 </html>
