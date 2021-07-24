@@ -1,13 +1,16 @@
 import react from "react";
 import Nav from "./nav";
+import '../css/main.css'
+import Footer from './footer'
 
 class Login extends react.Component {
     state = {  }
     render() { 
         return (  
-            <Nav>
+            <div>
+            <Nav/>
             <div class="container">
-                <form >
+                <form>
                     <h2>Login</h2>
                         <div class="form-group">
                             <label for="exampleInputEmail1">Email address</label>
@@ -25,8 +28,7 @@ class Login extends react.Component {
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
             </div>
-            <div class="footer">
-                <p>2021 Technical Profile Tracker</p>
+            <Footer/>
             </div>
         );
     }

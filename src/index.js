@@ -1,13 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import login from './component/login';
 import reportWebVitals from './reportWebVitals';
-
+import Login from './component/login'
+import Register from './component/registration';
+import AdminViewOfJobs from './component/AdminViewOfJobs';
+import JobDetailedView from './component/JobDetailed';
 
 ReactDOM.render(
   <React.StrictMode>
-    <login/>
+    {/* <Login/> */}
   </React.StrictMode>,
   document.getElementById('root')
 );

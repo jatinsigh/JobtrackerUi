@@ -1,5 +1,6 @@
 import react from "react";
-import App from "../App.css"
+import '../css/nav.css'
+import '../App'
 
 class Nav extends react.Component {
     state = {  }
