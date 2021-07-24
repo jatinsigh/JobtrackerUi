@@ -5,8 +5,9 @@ class Login extends react.Component {
     state = {  }
     render() { 
         return (  
-            <Nav>
+          
             <div class="container">
+                <Nav/>
                 <form >
                     <h2>Login</h2>
                         <div class="form-group">
@@ -24,9 +25,10 @@ class Login extends react.Component {
                         </div>
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
-            </div>
+            
             <div class="footer">
                 <p>2021 Technical Profile Tracker</p>
+            </div>
             </div>
         );
     }
