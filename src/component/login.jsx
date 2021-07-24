@@ -7,10 +7,17 @@ class Login extends react.Component {
     state = {  }
     render() { 
         return (  
+<<<<<<< HEAD
             <div>
             <Nav/>
             <div class="container">
                 <form>
+=======
+          
+            <div class="container">
+                <Nav/>
+                <form >
+>>>>>>> 9193c0d97139fafaa5a66356f217ab74a2dd54f3
                     <h2>Login</h2>
                         <div class="form-group">
                             <label for="exampleInputEmail1">Email address</label>
@@ -27,8 +34,15 @@ class Login extends react.Component {
                         </div>
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
+<<<<<<< HEAD
             </div>
             <Footer/>
+=======
+            
+            <div class="footer">
+                <p>2021 Technical Profile Tracker</p>
+>>>>>>> 9193c0d97139fafaa5a66356f217ab74a2dd54f3
+            </div>
             </div>
         );
     }
