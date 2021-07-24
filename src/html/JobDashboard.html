@@ -44,13 +44,10 @@
         </div>
       </div>
     </nav>
-    <div class="d-grid gap-2">
-      <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#new-job-card" aria-expanded="true">New Job</button>
-    </div>
     <div class="card-holder" id="new-job-card">
       <div class="card text-center">
         <div class="card-header">
-          <h3>Enter new job details</h3>
+          <h3>Job updation form</h3>
         </div>
         <div class="card-body">
           <form action="#" onsubmit="helper(event)">
@@ -109,7 +106,7 @@
                 required
               />
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" class="btn btn-primary">Update Job</button>
           </form>
 
         </div>
@@ -117,16 +114,16 @@
     </div>
 
     </div>
-    <div class="card-holder" id="job-card">
+    <div class="card-holder m-5" id="job-card">
       <div class="card text-center">
-        <div class="card-header">
+        <div class="card-header bg-info">
           <div
             class="btn-group"
             role="group"
             aria-label="Basic mixed styles example"
           >
-            <button type="button" class="btn btn-warning">Edit</button>
-            <button type="button" class="btn btn-danger">Delete</button>
+            <button type="button" class="btn btn-warning" id="edit-button">Update</button>
+            <button type="button" class="btn btn-danger" id="delete-button">Delete</button>
           </div>
         </div>
         <div class="card-body">
@@ -148,7 +145,7 @@
     </div>
     <div class="container" id="dynamicholder">
 
-      </div>>
+      </div>
     <div class="footer">
       <p>2021 Technical Profile Tracker</p>
     </div>
