@@ -6,6 +6,7 @@ import Login from './component/login'
 import Register from './component/registration';
 import AdminViewOfJobs from './component/AdminViewOfJobs';
 import JobDetailedView from './component/JobDetailed';
+import JobDashboard from './component/JobDashboard';
 
 ReactDOM.render(
   <React.StrictMode>
